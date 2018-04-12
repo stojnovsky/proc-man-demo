@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function start(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/start", true);
+        xmlhttp.send();
+      }
+
+      function stop(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/stop", true);
+        xmlhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <span> Hello World </span>
+    <br/>
+    <button onclick="start()">Start</button>
+    <br/>
+    <button onclick="stop()">Stop</button>
+  </body>
+</html>

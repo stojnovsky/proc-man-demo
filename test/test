@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var params = process.argv
+
+setInterval(function(){
+  console.log(params);
+},2000)
